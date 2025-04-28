@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukhan Store - Apoie a Educação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/img/LOGOTIPO/LOGOTIPO 1.png" alt="Edukhan Logo">
+            </a>
+            <div class="nav-links">
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Apoie a Educação de Crianças e Jovens</h1>
+            <p>
+                Cada compra na Edukhan Store ajuda diretamente no ensino de crianças e jovens
+                em situação de vulnerabilidade social. Seu apoio mantém projetos educacionais,
+                fornece materiais didáticos e cria oportunidades para um futuro melhor.
+            </p>
+        </div>
+    </section>
+
+    <!-- Listagem de Produtos -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="product-grid">
+
+                <!-- Blusa -->
+                <div class="product-card">
+                    <img src="assets/img/PRODUTOS/blusa_edukhan.png" alt="Blusa Edukhan">
+                    <h3>Blusa Edukhan</h3>
+                    <p class="price">R$ 49,90</p>
+                    <button class="btn-add" data-product="blusa">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Garrafa -->
+                <div class="product-card">
+                    <img src="assets/img/PRODUTOS/garrafa_edukhan.png" alt="Garrafa Edukhan">
+                    <h3>Garrafa</h3>
+                    <p class="price">R$ 39,90</p>
+                    <button class="btn-add" data-product="garrafa">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Caneca -->
+                <div class="product-card">
+                    <img src="assets/img/PRODUTOS/caneca_edukhan.png" alt="Caneca Edukhan">
+                    <h3>Caneca</h3>
+                    <p class="price">R$ 29,90</p>
+                    <button class="btn-add" data-product="caneca">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Caderno -->
+                <div class="product-card">
+                    <img src="assets/img/PRODUTOS/caderno_edukhan.png" alt="Caderno Edukhan">
+                    <h3>Caderno</h3>
+                    <p class="price">R$ 24,90</p>
+                    <button class="btn-add" data-product="caderno">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Ecobag -->
+                <div class="product-card">
+                    <img src="assets/img/PRODUTOS/ecobag_edukhan.png" alt="Ecobag Edukhan">
+                    <h3>Ecobag Sustentável</h3>
+                    <p class="price">R$ 34,90</p>
+                    <button class="btn-add" data-product="ecobag">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Bottom -->
+                <div class="product-card">
+                    <img src="assets/img/PRODUTOS/bottom_edukhan.png" alt="Bottom Edukhan">
+                    <h3>Bottom</h3>
+                    <p class="price">R$ 14,90</p>
+                    <button class="btn-add" data-product="bottom">Adicionar ao Carrinho</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Edukhan Store</h4>
+                    <p>Transformando vidas através da educação</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>contato@edukhan.org</p>
+                    <p>(11) 99999-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Edukhan Store. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
